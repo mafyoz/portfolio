@@ -1,0 +1,100 @@
+.testimonials{
+    padding-top: 135px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials__suptitle{
+        @include font(16, 25.7, 400);
+        color: #272D38;
+    }
+
+    .testimonials__title{
+        margin-top: 16px;
+        @include font(48, 48, 700);
+        color: #272D38;
+        text-align: center;
+        width: 100%;
+        max-width: 436px;
+    }
+
+    .testimonials__wrapper{
+        margin-top: 38px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .item{
+            padding: 32px;
+             display: flex;
+             align-items: center;
+             flex-direction: column;
+             text-align: center;
+             background-color: #DEDCDB80;
+             border-radius: 25px;
+             .item__title{
+                @include font(18, 25.7, 400);
+                color: #272D38;
+                margin-top: 8px;
+             }
+             .item__desc{
+                @include font(14, 18.2, 300);
+                color: #272D38;
+                margin-top: 27px;
+             }
+        }
+    }
+}
+
+@media (max-width:900px){
+    .testimonials{
+        padding-top: 120px;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .testimonials__suptitle{
+            @include font(12, 27.5, 400);
+            color: #272D38;
+        }
+    
+        .testimonials__title{
+            margin-top: 16px;
+            @include font(32, 32, 700);
+            color: #272D38;
+            text-align: center;
+            width: 100%;
+            max-width: 380px;
+        }
+    
+        .testimonials__wrapper{
+            margin-top: 38px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            .item{
+                padding: 32px;
+                 display: flex;
+                 align-items: center;
+                 flex-direction: column;
+                 text-align: center;
+                 background-color: #DEDCDB80;
+                 border-radius: 25px;
+                 .item__title{
+                    @include font(18, 25.7, 400);
+                    color: #272D38;
+                    margin-top: 8px;
+                 }
+                 .item__desc{
+                    @include font(14, 18.2, 300);
+                    color: #272D38;
+                    margin-top: 27px;
+                 }
+            }
+        }
+    }
+}

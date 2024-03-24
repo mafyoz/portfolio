@@ -1,0 +1,106 @@
+.contact {
+    padding-top: 135px;
+
+    .container {
+        display: flex;
+        gap: 90px;
+        align-items: center;
+        background-color: #DEDCDB80;
+        border-radius: 25px;
+    }
+
+    .contact__right {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        align-items: start;
+
+        .contact__title {
+            @include font(48, 48, 700);
+            color: #272D38;
+            width: 100%;
+            max-width: 361px;
+        }
+
+        .contact__desc {
+            @include font(16, 27.5, 400);
+            color: #272D38;
+            width: 100%;
+            max-width: 360px;
+        }
+
+        .contact__btn {
+            margin-top: 10px;
+            width: 167px;
+            height: 48px;
+            border-radius: 8px;
+            border: none;
+            background-color: #8EADD5;
+            @include font(18, 27.5, 600);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width:1084px) {
+   .contact{
+    .container {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+        background:none;
+        border-radius: 25px;
+    }
+    .contact__left {
+        display: none;
+    }
+    .contact__right {
+        flex-shrink:0 ;
+        width: 100%;
+        max-width: 379px;
+        padding: 25px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #DEDCDB80;
+        border-radius:25px;
+
+        .contact__title {
+            @include font(32, 32, 700);
+            color: #272D38;
+            width: 100%;
+            max-width: none;
+            text-align: center;
+        }
+
+        .contact__desc {
+            @include font(16, 27.5, 400);
+            color: #272D38;
+            width: 100%;
+            max-width: none;
+            text-align: center;
+        }
+
+        .contact__btn {
+            margin-top: 10px;
+            width: 167px;
+            height: 48px;
+            border-radius: 8px;
+            border: none;
+            background-color: #8EADD5;
+            @include font(18, 27.5, 600);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+   }
+}
